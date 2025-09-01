@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Based Network Architecture (CBNA) - Modern Cloud Network Solutions</title>
+    <meta name="description" content="Cloud Based Network Architecture (CBNA) - Modern solution for scalable network infrastructures with built-in security and performance optimization.">
+    <meta name="keywords" content="cloud network, network architecture, CBNA, scalable infrastructure, network security">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Cloud Based Network Architecture (CBNA)">
+    <meta property="og:description" content="Modern solution for scalable network infrastructures">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cbna.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/icons/favicon.svg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="14" stroke="#2563eb" stroke-width="2"/>
+                        <path d="M8 16L14 22L24 10" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="logo-text">CBNA</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#statistics" class="nav-link">Stats</a></li>
+                    <li><a href="#architecture" class="nav-link">Architecture</a></li>
+                    <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="btn btn-secondary" onclick="openModal('login')">Login</button>
+                    <button class="btn btn-primary" onclick="openModal('signup')">Get Started</button>
+                </div>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Cloud Based Network Architecture
+                    </h1>
+                    <p class="hero-subtitle">
+                        Modern solution for scalable network infrastructures with built-in security and performance optimization
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary btn-large" onclick="openModal('signup')">
+                            Start Free Trial
+                        </button>
+                        <button class="btn btn-outline btn-large" onclick="openModal('demo')">
+                            Watch Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <svg class="hero-image" width="500" height="400" viewBox="0 0 500 400" fill="none">
+                        <!-- Cloud network visualization -->
+                        <circle cx="250" cy="200" r="150" fill="url(#cloudGradient)" opacity="0.1"/>
+                        <circle cx="150" cy="150" r="30" fill="#2563eb" opacity="0.8"/>
+                        <circle cx="350" cy="150" r="30" fill="#3b82f6" opacity="0.8"/>
+                        <circle cx="150" cy="250" r="30" fill="#3b82f6" opacity="0.8"/>
+                        <circle cx="350" cy="250" r="30" fill="#2563eb" opacity="0.8"/>
+                        <circle cx="250" cy="100" r="25" fill="#1e40af" opacity="0.9"/>
+                        <circle cx="250" cy="300" r="25" fill="#1e40af" opacity="0.9"/>
+                        <!-- Connection lines -->
+                        <path d="M150 150L250 100L350 150" stroke="#2563eb" stroke-width="2" opacity="0.6"/>
+                        <path d="M150 150L250 200L350 150" stroke="#3b82f6" stroke-width="2" opacity="0.6"/>
+                        <path d="M150 250L250 200L350 250" stroke="#2563eb" stroke-width="2" opacity="0.6"/>
+                        <path d="M150 150L250 200L150 250" stroke="#3b82f6" stroke-width="2" opacity="0.6"/>
+                        <path d="M350 150L250 200L350 250" stroke="#2563eb" stroke-width="2" opacity="0.6"/>
+                        <defs>
+                            <linearGradient id="cloudGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#2563eb;stop-opacity:0.1"/>
+                                <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.1"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Why Choose CBNA?</h2>
+                    <p class="section-subtitle">Built for the modern enterprise with scalability, security, and performance in mind</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <rect x="8" y="8" width="32" height="32" rx="8" fill="#2563eb" opacity="0.1"/>
+                                <path d="M16 24L22 30L32 18" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Scalability</h3>
+                        <p class="feature-description">Automatically scale your network infrastructure based on demand with intelligent load balancing</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <rect x="8" y="8" width="32" height="32" rx="8" fill="#3b82f6" opacity="0.1"/>
+                                <path d="M24 8L28 16L36 16L30 22L32 30L24 26L16 30L18 22L12 16L20 16L24 8Z" fill="#3b82f6"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Security</h3>
+                        <p class="feature-description">Built-in encryption, threat detection, and compliance with industry security standards</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <rect x="8" y="8" width="32" height="32" rx="8" fill="#1e40af" opacity="0.1"/>
+                                <circle cx="24" cy="24" r="12" stroke="#1e40af" stroke-width="2"/>
+                                <path d="M24 16V24L30 30" stroke="#1e40af" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Performance</h3>
+                        <p class="feature-description">Optimized for high-speed data transfer with global edge locations and intelligent routing</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <rect x="8" y="8" width="32" height="32" rx="8" fill="#2563eb" opacity="0.1"/>
+                                <rect x="16" y="16" width="16" height="16" rx="2" stroke="#2563eb" stroke-width="2"/>
+                                <circle cx="24" cy="24" r="2" fill="#2563eb"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Management</h3>
+                        <p class="feature-description">Centralized control through intuitive web interface with real-time monitoring and analytics</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="statistics" id="statistics">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Trusted by Industry Leaders</h2>
+                    <p class="section-subtitle">Join thousands of companies that trust CBNA for their network infrastructure</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number counter" data-target="500" data-duration="2000">0</div>
+                        <div class="stat-label">Enterprise Clients</div>
+                        <div class="stat-description">Fortune 500 companies worldwide</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number counter" data-target="99" data-duration="2000">0</div>
+                        <div class="stat-label">Uptime %</div>
+                        <div class="stat-description">Guaranteed reliability</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number counter" data-target="50" data-duration="2000">0</div>
+                        <div class="stat-label">Global Locations</div>
+                        <div class="stat-description">Edge servers worldwide</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number counter" data-target="24" data-duration="2000">0</div>
+                        <div class="stat-label">/7 Support</div>
+                        <div class="stat-description">Round-the-clock assistance</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Architecture Section -->
+        <section class="architecture" id="architecture">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Network Architecture</h2>
+                    <p class="section-subtitle">Advanced cloud-based architecture designed for reliability and performance</p>
+                </div>
+                <div class="architecture-content">
+                    <div class="architecture-diagram">
+                        <svg width="600" height="400" viewBox="0 0 600 400" fill="none">
+                            <!-- Cloud infrastructure visualization -->
+                            <rect x="50" y="50" width="500" height="300" rx="20" fill="url(#bgGradient)" opacity="0.05"/>
+                            
+                            <!-- Load Balancer -->
+                            <rect x="250" y="80" width="100" height="40" rx="8" fill="#2563eb" opacity="0.9"/>
+                            <text x="300" y="105" text-anchor="middle" fill="white" font-size="12" font-family="Inter">Load Balancer</text>
+                            
+                            <!-- Application Servers -->
+                            <rect x="100" y="160" width="80" height="60" rx="8" fill="#3b82f6" opacity="0.8"/>
+                            <text x="140" y="195" text-anchor="middle" fill="white" font-size="10" font-family="Inter">App Server 1</text>
+                            
+                            <rect x="220" y="160" width="80" height="60" rx="8" fill="#3b82f6" opacity="0.8"/>
+                            <text x="260" y="195" text-anchor="middle" fill="white" font-size="10" font-family="Inter">App Server 2</text>
+                            
+                            <rect x="340" y="160" width="80" height="60" rx="8" fill="#3b82f6" opacity="0.8"/>
+                            <text x="380" y="195" text-anchor="middle" fill="white" font-size="10" font-family="Inter">App Server 3</text>
+                            
+                            <!-- Database Layer -->
+                            <rect x="200" y="280" width="120" height="50" rx="8" fill="#1e40af" opacity="0.9"/>
+                            <text x="260" y="310" text-anchor="middle" fill="white" font-size="12" font-family="Inter">Database Cluster</text>
+                            
+                            <!-- Connection lines -->
+                            <path d="M300 120L140 160" stroke="#2563eb" stroke-width="2" opacity="0.6"/>
+                            <path d="M300 120L260 160" stroke="#2563eb" stroke-width="2" opacity="0.6"/>
+                            <path d="M300 120L380 160" stroke="#2563eb" stroke-width="2" opacity="0.6"/>
+                            <path d="M140 220L260 280" stroke="#3b82f6" stroke-width="2" opacity="0.6"/>
+                            <path d="M260 220L260 280" stroke="#3b82f6" stroke-width="2" opacity="0.6"/>
+                            <path d="M380 220L260 280" stroke="#3b82f6" stroke-width="2" opacity="0.6"/>
+                            
+                            <defs>
+                                <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#2563eb;stop-opacity:0.1"/>
+                                    <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.1"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="architecture-details">
+                        <div class="detail-item">
+                            <h4>Load Balancing</h4>
+                            <p>Intelligent traffic distribution across multiple application servers for optimal performance</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Auto-scaling</h4>
+                            <p>Automatic resource allocation based on real-time demand and performance metrics</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>High Availability</h4>
+                            <p>99.99% uptime guarantee with redundant infrastructure and failover mechanisms</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">What Our Clients Say</h2>
+                    <p class="section-subtitle">Real feedback from companies that transformed their infrastructure with CBNA</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-stars">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75492L10 0Z" fill="#fbbf24"/>
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75492L10 0Z" fill="#fbbf24"/>
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75492L10 0Z" fill="#fbbf24"/>
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75492L10 0Z" fill="#fbbf24"/>
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75492L10 0Z" fill="#fbbf24"/>
+                                </svg>
+                            </div>
+                            <p class="testimonial-text">"CBNA transformed our network infrastructure completely. The auto-scaling capabilities have saved us countless hours and improved our performance by 300%."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                    <circle cx="24" cy="24" r="24" fill="#e5e7eb"/>
+                                    <path d="M24 12C27.3137 12 30 14.6863 30 18C30 21.3137 27.3137 24 24 24C20.6863 24 18 21.3137 18 18C18 14.6863 20.6863 12 24 12Z" fill="#9ca3af"/>
+                                    <path d="M12 36C12 30.4772 17.3726 26 24 26C30.6274 26 36 30.4772 36 36" stroke="#9ca3af" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Sarah Johnson</h4>
+                                <p class="author-title">CTO, TechCorp</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-stars">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75492L10 0Z" fill="#fbbf24"/>
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75492L10 0Z" fill="#fbbf24"/>
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75492L10 0Z" fill="#fbbf24"/>
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75492L10 0Z" fill="#fbbf24"/>
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75492L10 0Z" fill="#fbbf24"/>
+                                </svg>
+                            </div>
+                            <p class="testimonial-text">"The security features are outstanding. We've seen a 95% reduction in security incidents since implementing CBNA. The team's support is exceptional."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                    <circle cx="24" cy="24" r="24" fill="#e5e7eb"/>
+                                    <path d="M24 12C27.3137 12 30 14.6863 30 18C30 21.3137 27.3137 24 24 24C20.6863 24 18 21.3137 18 18C18 14.6863 20.6863 12 24 12Z" fill="#9ca3af"/>
+                                    <path d="M12 36C12 30.4772 17.3726 26 24 26C30.6274 26 36 30.4772 36 36" stroke="#9ca3af" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Michael Chen</h4>
+                                <p class="author-title">Security Director, DataFlow</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-stars">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75492L10 0Z" fill="#fbbf24"/>
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75492L10 0Z" fill="#fbbf24"/>
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75492L10 0Z" fill="#fbbf24"/>
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75492L10 0Z" fill="#fbbf24"/>
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75492L10 0Z" fill="#fbbf24"/>
+                                </svg>
+                            </div>
+                            <p class="testimonial-text">"The global edge locations have dramatically improved our user experience. Our customers now enjoy lightning-fast response times regardless of their location."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                    <circle cx="24" cy="24" r="24" fill="#e5e7eb"/>
+                                    <path d="M24 12C27.3137 12 30 14.6863 30 18C30 21.3137 27.3137 24 24 24C20.6863 24 18 21.3137 18 18C18 14.6863 20.6863 12 24 12Z" fill="#9ca3af"/>
+                                    <path d="M12 36C12 30.4772 17.3726 26 24 26C30.6274 26 36 30.4772 36 36" stroke="#9ca3af" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Emma Rodriguez</h4>
+                                <p class="author-title">VP Engineering, GlobalTech</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing" id="pricing">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Pricing Plans</h2>
+                    <p class="section-subtitle">Choose the plan that fits your business needs</p>
+                </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Starter</h3>
+                            <div class="pricing-price">
+                                <span class="currency">$</span>
+                                <span class="amount">99</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>Up to 10 nodes</li>
+                            <li>Basic monitoring</li>
+                            <li>Email support</li>
+                            <li>Standard security</li>
+                        </ul>
+                        <button class="btn btn-primary btn-full" onclick="openModal('signup')">Start Free Trial</button>
+                    </div>
+                    <div class="pricing-card featured">
+                        <div class="pricing-badge">Most Popular</div>
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Professional</h3>
+                            <div class="pricing-price">
+                                <span class="currency">$</span>
+                                <span class="amount">299</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>Up to 100 nodes</li>
+                            <li>Advanced monitoring</li>
+                            <li>Priority support</li>
+                            <li>Enhanced security</li>
+                            <li>Auto-scaling</li>
+                        </ul>
+                        <button class="btn btn-primary btn-full" onclick="openModal('signup')">Start Free Trial</button>
+                    </div>
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Enterprise</h3>
+                            <div class="pricing-price">
+                                <span class="currency">$</span>
+                                <span class="amount">Custom</span>
+                                <span class="period"></span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>Unlimited nodes</li>
+                            <li>Custom monitoring</li>
+                            <li>24/7 dedicated support</li>
+                            <li>Enterprise security</li>
+                            <li>Custom integrations</li>
+                        </ul>
+                        <button class="btn btn-outline btn-full" onclick="openModal('contact')">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta" id="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Transform Your Network?</h2>
+                    <p class="cta-subtitle">Join thousands of companies that have already upgraded their infrastructure with CBNA</p>
+                    <div class="cta-actions">
+                        <button class="btn btn-primary btn-large" onclick="openModal('signup')">Start Free Trial</button>
+                        <button class="btn btn-outline btn-large" onclick="openModal('demo')">Watch Demo</button>
+                    </div>
+                    <div class="cta-features">
+                        <div class="cta-feature">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 12L11 14L15 10" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>No credit card required</span>
+                        </div>
+                        <div class="cta-feature">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 12L11 14L15 10" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>14-day free trial</span>
+                        </div>
+                        <div class="cta-feature">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 12L11 14L15 10" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Cancel anytime</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="section-subtitle">Ready to transform your network infrastructure? Let's talk.</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="#2563eb" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#2563eb" stroke-width="2"/>
+                                    <polyline points="22,6 12,13 2,6" stroke="#2563eb" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@cbna.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="#2563eb" stroke-width="2"/>
+                                    <circle cx="12" cy="10" r="3" stroke="#2563eb" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Office</h4>
+                                <p>123 Cloud Street, Tech City, TC 12345</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="company" name="company" placeholder="Company Name">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="#2563eb" stroke-width="2"/>
+                            <path d="M6 12L10 16L18 8" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="logo-text">CBNA</span>
+                    </div>
+                    <p class="footer-description">Modern cloud-based network architecture solutions for enterprises</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#architecture">Architecture</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#" onclick="openModal('demo')">Demo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#" onclick="openModal('about')">About</a></li>
+                        <li><a href="#" onclick="openModal('careers')">Careers</a></li>
+                        <li><a href="#" onclick="openModal('contact')">Contact</a></li>
+                        <li><a href="#" onclick="openModal('blog')">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#" onclick="openModal('privacy')">Privacy Policy</a></li>
+                        <li><a href="#" onclick="openModal('terms')">Terms of Service</a></li>
+                        <li><a href="#" onclick="openModal('cookies')">Cookie Policy</a></li>
+                        <li><a href="#" onclick="openModal('gdpr')">GDPR</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CBNA. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M16 8c-1.657 0-3 1.343-3 3v6h-4v-6c0-1.657-1.343-3-3-3s-3 1.343-3 3v6H0V8c0-1.657 1.343-3 3-3s3 1.343 3 3V8h4V8c0-1.657 1.343-3 3-3s3 1.343 3 3v6h4v-6c0-1.657-1.343-3-3-3z" fill="#6b7280"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="#6b7280"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 0C4.477 0 0 4.477 0 10c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0110 4.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.163 20 14.418 20 10c0-5.523-4.477-10-10-10z" fill="#6b7280"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Container -->
+    <div id="modalContainer" class="modal-container">
+        <!-- Modal content will be dynamically inserted here -->
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>
